@@ -1,0 +1,90 @@
+.t--home {
+    main {
+        margin-top: 0;
+    }
+
+    .main-content {
+        padding-top: 0;
+        padding-bottom: 0;
+        background: none;
+        color: $white;
+    }
+
+    .page-title {
+        width: 100%;
+        margin: 0;
+        @include size(font-size, 40);
+        color: $white;
+    }
+
+    .summary {
+        @include size(max-width, 700);
+        margin-bottom: 10px;
+    }
+}
+
+.home-button {
+    @include size(margin-right, 10);
+    @include size(margin-bottom, 5);
+}
+
+.home__header {
+    width: 100%;
+    position: relative;
+    background: $white url(/lib/images/bg_rectangle.png?embed) 50% 0 repeat;
+
+    .foldout {
+        @include size(padding, 50, 0);
+        margin-bottom: 0;
+        text-align: center;
+        border: none;
+    }
+}
+
+.home__title {
+    padding: 0;
+    @include size(margin-bottom, 20);
+    color: $white;
+    text-align: center;
+
+    .page-title {
+        @include size(font-size, 50);
+        line-height: 1;
+        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        font-weight: 600;
+    }
+}
+
+@include mq(min-width, $mediumBreakpoint) {
+    .t--home {
+        main {
+            margin-top: 0;
+        }
+    }
+
+    .home__title {
+        .page-title {
+            @include size(font-size, 80);
+            line-height: 1;
+        }
+    }
+
+    .home__header {
+        @include size(height, 450);
+        position: relative;
+
+        .foldout {
+            padding: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+    }
+}
+
+@include mq(min-width, $largeBreakpoint) {
+    .home__header {
+        @include size(height, 650);
+    }
+}

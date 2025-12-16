@@ -1,0 +1,60 @@
+$black: #000;
+$white: #fff;
+$alto: #ddd;
+$error: #a94442;
+$ginger: #fe7600;
+
+$bodyBgColor: #ebebeb;
+$bodyFontFamily: arial, times;
+$primaryFontFamily: $bodyFontFamily, arial, times;
+$secondaryFontFamily: arial, times;
+
+$typographyColor: #000;
+$mainThemeColor: #0087d2;
+$secondaryThemeColor: #0087d2;
+$tertiaryThemeColor: #0087d2;
+
+$btnRadius: 18px;
+$interfaceRadius: 4px;
+
+$mainNavPagesColor: #8d8d8d;
+$mainNavActionsColor: $mainThemeColor;
+$mainNavActionsSeperator: $alto;
+
+$globalNavHeight: 70;
+
+$contentGroupNavHeight: 85;
+$minifiedcontentGroupNavHeight: 55;
+
+$listBgColor: #ebebeb;
+$listHeaderBgColor: color-mix(in srgb, $listBgColor, black, 10%);
+
+$relatedItemsBgColor: #1f1f25;
+$relatedItemsTextColor: $white;
+$relatedItemsHeaderBgColor: #2c2e36;
+
+$menuMobileActionsBgColor: #e0e0e0;
+$menuMobileBgColor: #f1f1f1;
+
+$footerHeight: 300;
+$footerBgColor: #23232a;
+
+$standardOffset: 30;
+
+$smallBreakpoint: 600px;
+$mediumBreakpoint: 800px;
+$largeBreakpoint: 1024px;
+$hugeBreakpoint: 1200px;
+
+// Needed for _form.scss
+$font-size-base:        16px !default;
+$font-size-small:       floor(0.8 * $font-size-base) !default; // ~14px
+$font-size-large:       floor(1.25 * $font-size-base) !default; // ~20px
+$font-size-h2:          floor(1.5 * $font-size-base) !default; // ~24px
+$line-height-base:      1.25 !default;
+$line-height-large:     1.5 !default;
+$line-height-computed:  floor(($font-size-base * $line-height-base)) !default; // ~20px
+$gray-light:            #999 !default;
+$brand-primary:         $mainThemeColor !default;
+$brand-danger:          $error !default;
+

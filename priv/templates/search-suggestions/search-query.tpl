@@ -1,0 +1,46 @@
+{# Search suggestions query #}
+
+{%
+    with
+        results_template,
+        cat|default:[],
+        paged|default_if_none:true,
+        cat_exclude|default:['meta', 'menu', 'admin_content_query'],
+        search_text|default:q.value|default:q.qs,
+        cg_name,
+        pagelen|default:10,
+        unfinished_or_nodate,
+        authoritative|default:1
+    as
+        results_template,
+        cat,
+        paged,
+        cat_exclude,
+        search_text,
+        content_group,
+        pagelen,
+        unfinished_or_nodate,
+        authoritative
+%}
+        {% comment %}
+            cat_promote=cat_promote
+            cat_promote_recent=cat_promote_recent
+            cat_exclude_defaults=cat_exclude_defaults
+            cat_exclude_defaults|default_if_none:true,
+        {% endcomment %}
+
+        {% with m.search.query::%{
+            cat: cat,
+            cat_exclude: cat_exclude,
+            is_authoritative: authoritative,
+            unfinished_or_nodate: unfinished_or_nodate,
+            content_group: content_group,
+            text: search_text,
+            page: 1,
+            pagelen: pagelen
+        } as result
+    %}
+        {% include results_template result=result %}
+    {% endwith %}
+
+{% endwith %}

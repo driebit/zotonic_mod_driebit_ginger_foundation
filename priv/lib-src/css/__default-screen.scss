@@ -1,0 +1,21 @@
+// This is meant as an example screen.css as new sites
+
+// Global
+@import 'src/variables';
+@import 'src/mixins';
+@import 'src/base';
+@import 'src/icons';
+@import 'src/buttons';
+
+// Vendors
+@import 'vendors/jquery.fancybox';
+@import 'vendors/slick';
+
+// Blocks
+@import 'src/blocks/';
+
+// Layout
+@import 'src/layout/';
+
+// Pages
+@import 'src/pages/';

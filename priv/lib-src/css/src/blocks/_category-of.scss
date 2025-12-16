@@ -1,0 +1,57 @@
+.category-of {
+    display: inline-block;
+    @include size(height, 35);
+    @include size(padding, 0, 15);
+    background: $mainThemeColor;
+    color: $white;
+    @include size(line-height, 35);
+    font-style: italic;
+    @include size(font-size, 16);
+
+    i {
+        @include size(margin-right, 8);
+        color: color-mix(in srgb, $mainThemeColor, black, 20%);
+    }
+}
+
+.category-of__left {
+    @extend .category-of;
+}
+
+.category-of__right {
+    display: inline-block;
+    @include size(height, 35);
+    @include size(padding, 0, 15);
+    @include size(margin-left, -5);
+    background: $typographyColor;
+    color: $white;
+    @include size(line-height, 35);
+    font-style: italic;
+    @include size(font-size, 16);
+}
+
+.category-of--event {
+    display: inline-block;
+    line-height: 1;
+}
+
+.category-of__date,
+.category-of__cat {
+    @extend .category-of__left;
+}
+
+.category-of__time,
+.category-of__location {
+    @extend .category-of__right;
+}
+
+.category-of--sided {
+    @extend .category-of;
+    position: absolute;
+    @include size(top, -35);
+    left: 0px;
+}
+
+.category-of__day:first-letter {
+    text-transform: uppercase;
+}

@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes outline-animate {
+    0% {
+        outline-offset: 0.5rem;
+    }
+
+    to {
+        outline-offset: -0.1rem;
+    }
+}
+
+*:focus {
+    outline: 0.2rem solid #51cbee;
+    animation: outline-animate 0.1s linear 0s 1 normal;
+    animation-fill-mode: forwards;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    word-wrap: normal;
+
+    @include setInteractive {
+        position: fixed !important;
+        width: 100% !important;
+        clip: auto;
+        overflow: visible;
+        height: auto;
+        z-index: 2000;
+    }
+}
+
+.skip-link {
+    text-align: center;
+    padding: 7px;
+    display: block;
+    background-color: $white;
+    font-size: 2rem;
+    line-height: 2.6rem;
+    color: $mainThemeColor;
+    z-index: 1002;
+}
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    @include size(padding-top, 60);
+    background: $bodyBgColor;
+    color: $typographyColor;
+    line-height: 1.5;
+    font-family: $bodyFontFamily;
+    font-weight: 300;
+    @include size(font-size, 16);
+
+    &.is-menu-visible {
+        overflow: hidden;
+    }
+}
+
+@include mq(min-width, $mediumBreakpoint) {
+    body {
+        @include size(margin-bottom, $footerHeight);
+    }
+}
+
+@include mq(min-width, $largeBreakpoint) {
+    body {
+        @include size(padding-top, $globalNavHeight);
+
+        &.is-menu-visible:before {
+            @include size(top, $globalNavHeight);
+        }
+    }
+}
+
+a,
+a:hover,
+a:active {
+    color: $mainThemeColor;
+}
+
+a[href*="youtube"],
+a[href*="google"],
+a[href*="vimeo"] {
+    word-break: break-all;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ol,
+ul,
+table {
+    margin: 0 0 1em 0;
+}
+
+.h1,
+h1 {
+    @include size(font-size, 35);
+    @include size(line-height, 36);
+    @include size(margin-bottom, 10);
+}
+
+.h2,
+h2 {
+    @include size(font-size, 28);
+    @include size(line-height, 30);
+    @include size(margin-bottom, 10);
+}
+
+.h3,
+h3 {
+    @include size(font-size, 25);
+    @include size(line-height, 28);
+    @include size(margin-bottom, 0);
+}
+
+@include mq(min-width, 900) {
+    h1 {
+        @include size(font-size, 41);
+        @include size(line-height, 44);
+    }
+}
+
+.subtitle {
+    @include size(margin-top, 10);
+    margin-bottom: 0;
+}
+
+%cf {
+    &:before {
+        content: "";
+        display: table;
+    }
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+.cf {
+    @extend %cf;
+}
+
+figure {
+    @include size(margin-bottom, 30);
+    position: relative;
+
+    &.-small {
+        width: calc((100% / 4) - 40px);
+    }
+
+    &.-middle,
+    &.-medium {
+        width: calc((100% / 2) - 10px);
+    }
+
+    &.-large {
+        width: 100%;
+    }
+}
+
+.video-figure__container {
+    width: 100%;
+    padding-top: 56.25%;
+    position: relative;
+
+    video,
+    iframe {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+figcaption {
+    @include size(margin-top, 5);
+    position: relative;
+    @include size(font-size, 14);
+    color: color-mix(in srgb, $typographyColor, white, 50%);
+
+    p {
+        display: inline-block;
+        margin: 0 15px 0 0;
+    }
+}
+
+blockquote {
+    @include size(font-size, 18);
+    border-left: 5px solid $mainThemeColor;
+}
+
+iframe {
+    width: 100%;
+    @include size(height, 370);
+}
+
+@include mq(max-width, $smallBreakpoint) {
+    iframe {
+        @include size(height, 250);
+    }
+}
+
+.body-text,
+.block--text {
+    @extend %cf;
+
+    ul,
+    ol {
+        @include size(margin-left, 20);
+    }
+
+    h3 {
+        @include size(margin-bottom, 10);
+    }
+}
+
+// Editor generated
+
+.align-left {
+    float: left;
+    @include size(margin-right, 10);
+}
+
+.align-right {
+    float: right;
+    @include size(margin-right, 10);
+}
+
+// Zotonic
+
+.z-logon-box.error_duplicate_username #signup_error_tos_agree,
+.z-logon-box.error_duplicate_username #signup_error_duplicate_username,
+.z-logon-box.error_duplicate_username #signup_error_duplicate_identity {
+    display: block;
+}
+
+// Prevent zooming on touch devices
+
+.z_logon_form {
+    input.form-control {
+        font-size: 16px;
+    }
+}

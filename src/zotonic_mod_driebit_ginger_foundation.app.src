@@ -1,0 +1,17 @@
+{application, zotonic_mod_driebit_ginger_foundation, [
+    {description, "Driebit Ginger module"},
+    {vsn, git},
+    {registered, []},
+    {applications, [
+        kernel, stdlib,
+        zotonic_core, zotonic_apps,
+        zotonic_mod_driebit_base
+    ]},
+    {env, []},
+    {modules, []},
+    {doc, "doc"},
+    {licenses, ["Apache-2.0"]},
+    {links, [
+        {"Website", "https://driebit.nl/"}
+    ]}
+]}.

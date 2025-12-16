@@ -1,0 +1,305 @@
+.global-nav {
+    width: 100%;
+    @include size(height, 60);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    background-color: $white;
+    @include size(line-height, 60);
+    @include size(font-size, 15);
+    font-weight: 400;
+    box-shadow: 0 2px 4px rgba(0,0,0, .13);
+    text-transform: lowercase;
+}
+
+.logo {
+    display: block;
+    width: 50%;
+    @include size(max-width, 200);
+    height: 100%;
+    position: relative;
+    margin-left: 15px;
+    text-transform: none;
+}
+
+.global-nav__menu {
+    display: block;
+    width: 100%;
+    position: fixed;
+    @include size(top, 120);
+    right: 0;
+    z-index: 1000;
+    background-color: $menuMobileBgColor;
+    transform: translateX(100%);
+    transition: all 250ms ease-out;
+
+    ul {
+        margin-bottom: 0;
+        list-style-type: none;
+    }
+
+    li {
+        display: block;
+        @include size(line-height, 18);
+        border-bottom: 1px solid color-mix(in srgb, $typographyColor, white, 60%);
+    }
+
+    a {
+        display: block;
+        @include size(padding, 12, 14);
+        transition: background 250ms linear;
+        text-align: left;
+        color: $mainNavPagesColor;
+
+        &:hover,
+        &:active,
+        &:focus {
+            color: $mainThemeColor;
+            text-decoration: none;
+        }
+    }
+
+    .is-active > a {
+        color: $mainThemeColor;
+
+        a:hover,
+        &:active,
+        &:focus {
+            color: inherit;
+        }
+    }
+
+    .is-open & {
+        transform: translateX(0);
+    }
+
+    ul {
+        display: none;
+    }
+}
+
+// Actions
+
+.global-nav__actions {
+    width: 100%;
+    @include size(height, 60);
+    position: fixed;
+    @include size(top, 60);
+    right: 0;
+    z-index: 1000;
+    background: $mainThemeColor;
+    @include size(line-height, 60);
+    transform: translateX(100%);
+    transition: all 250ms ease-out;
+
+    .is-open & {
+        transform: translateX(0);
+    }
+
+    ul {
+        margin-bottom: 0;
+        list-style-type: none;
+    }
+}
+
+.btn--nav-actions {
+    width: 50%;
+    float: left;
+    @include size(padding, 0, 15);
+    border-right: 1px solid $white;
+    text-align: center;
+    @include size(line-height, 60);
+    color: $white;
+
+    img {
+        vertical-align: middle;
+    }
+
+    i {
+        @include size(margin-right, 5);
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration: none;
+        color: $secondaryThemeColor;
+
+        img {
+            border-color: $secondaryThemeColor;
+        }
+    }
+}
+
+.login--global-nav {
+    i {
+        @include size(margin-right, 8);
+        position: relative;
+        @include size(font-size, 12);
+    }
+
+    i:after {
+        content: '';
+        display: block;
+        @include size(width, 24);
+        @include size(height, 24);
+        position: absolute;
+        top: -5px;
+        left: -6px;
+        border-radius: 50%;
+        border: 2px solid $mainThemeColor;
+        text-align: center;
+        line-height: 1;
+    }
+}
+
+.login--global-nav,
+.profile--global-nav,
+.language--global-nav {
+    @extend .btn--nav-actions;
+}
+
+.profile--global-nav {
+    img {
+        display: inline-block;
+        @include size(width, 30);
+        @include size(height, 30);
+        @include size(margin-right, 3);
+        position: relative;
+        top: -2px;
+        border-radius: 50%;
+        border: 2px solid $mainThemeColor;
+    }
+}
+
+@include mq(min-width, $smallBreakpoint){
+    .global-nav__menu {
+        width: 35%;
+        height: 100%;
+    }
+
+    .global-nav__actions {
+        width: 35%;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-height: 400px) {
+    .global-nav__menu {
+        height: calc(100% - 120px);
+        overflow: scroll;
+    }
+}
+
+@include mq(min-width, $largeBreakpoint) {
+    .global-nav__menu__dropdown_close {
+        display: none;
+        position: fixed;
+        z-index: 499;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+
+    .global-nav {
+        @include size(height, $globalNavHeight);
+        @include size(line-height, $globalNavHeight);
+    }
+
+    .logo {
+        @include size(max-width, 100);
+        @include size(margin-right, 15);
+        float: left;
+    }
+
+    .global-nav__menu {
+        width: auto;
+        float: left;
+        position: relative;
+        top: 0px;
+        z-index: 300;
+        transform: none;
+        background: none;
+        transition: none;
+
+        > li {
+            float: left;
+            border: none;
+            border-right: 1px solid $alto;
+            line-height: inherit;
+
+            &:first-child {
+                border-left: 1px solid $alto;
+            }
+        }
+
+        a {
+            @include size(padding, 0, 15);
+        }
+
+        li:hover, li.touch-open {
+            ul {
+                display: block;
+                position: absolute;
+                @include size(top, $globalNavHeight);
+                background: $white;
+
+                li {
+                    padding: 10px 0;
+
+                    &:first-child {
+                        border-bottom: 1px solid $alto;
+                    }
+
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .global-nav__actions {
+        width: auto;
+        float: right;
+        position: static;
+        background: none;
+        transform: none;
+        transition: none;
+
+        div[id*='auth_link'],
+        div[id*='button_profile'] {
+            float: left;
+        }
+    }
+
+    .btn--nav-actions {
+        width: auto;
+        border-left: 1px solid $mainNavActionsSeperator;
+        border-right: 0px;
+        text-align: left;
+        color: $mainThemeColor;
+        @include size(line-height, $globalNavHeight);
+    }
+
+    .login--global-nav {
+        i:before {
+            color: $mainThemeColor;
+            border-color: $mainThemeColor;
+        }
+    }
+
+    .toggle-menu {
+        display: none;
+    }
+}
+
+@include mq(max-height, 500) {
+    .is-open .global-nav__menu {
+        height: calc(100% - (#{$globalNavHeight + $globalNavHeight}px));
+        overflow-y: scroll;
+    }
+}
