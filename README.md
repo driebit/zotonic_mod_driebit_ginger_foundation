@@ -6,6 +6,7 @@ foundation.
 It copies templates and scss files from:
 
 - mod_ginger_foundation
+- mod_ginger_remark
 - mod_ginger_base (vendors css)
 
 For foundation designs, see https://projects.invisionapp.com/d/main#/projects/4833921.
