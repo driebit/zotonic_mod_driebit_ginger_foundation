@@ -6,355 +6,467 @@
 # NB: Consider using poEdit <http://poedit.sourceforge.net>
 #
 #
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2025-12-18 11:07+0100\n"
-"Last-Translator: Marc Worrell <marc@worrell.nl>\n"
-"Language-Team: \n"
-"Language: nl\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.8\n"
+
+#: zotonic_mod_driebit_ginger_foundation/priv/templates/page-actions/page-action-connect-user.tpl:57
+#: zotonic_mod_driebit_ginger_foundation/priv/templates/page-actions/page-action-connect.tpl:84
+msgid ""
+""
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/page-actions/page-action-interested.tpl:3
-msgid "1 person interested"
-msgstr "1 geïnteresseerde"
+msgid ""
+"1 person interested"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-number-of.tpl:1
-#, fuzzy
-msgid "1 remark"
-msgstr "1 opmerking"
+msgid ""
+"1 remark"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/email/email-follow.tpl:10
-#, fuzzy
-msgid "A new comment is posted on a story you are following"
-msgstr "Er is een nieuwe reactie geplaatst op een verhaal dat je volgt."
+msgid ""
+"A new comment is posted on a story you are following"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/email/email-follow.tpl:8
-#, fuzzy
-msgid "A new comment is posted on a story you authored"
+msgid ""
+"A new comment is posted on a story you authored"
 msgstr ""
-"Er is een nieuwe reactie geplaatst op een verhaal dat jij hebt geschreven."
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/pager/count.tpl:3
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/pager/pager.tpl:3
-msgid "About {n} results"
-msgstr "Ongeveer {n} resultaten"
+msgid ""
+"About {n} results"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/about/about.tpl:1
-msgid "About:"
-msgstr "Over: "
+msgid ""
+"About:"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/page.media.tpl:35
-#, fuzzy
-#| msgid "Actors: "
-msgid "Actors:"
-msgstr "Actoren: "
+msgid ""
+"Actors:"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-list.tpl:14
+#: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-list.tpl:14
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-list.tpl:43
-#, fuzzy
-msgid "Add your reaction"
-msgstr "Deel je reactie"
+#: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-list.tpl:43
+msgid ""
+"Add your reaction"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-form.tpl:9
-#, fuzzy
-msgid "Add your remark"
-msgstr "Voeg je opmerking toe"
+#: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-form.tpl:9
+msgid ""
+"Add your remark"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/main-aside/main-aside.person.tpl:5
-msgid "Authored by"
-msgstr "Bewerkt door"
+msgid ""
+"Authored by"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/email/email-follow.tpl:21
-msgid "By"
-msgstr "Door"
+msgid ""
+"By"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/remark-media/remark-media.image.tpl:32
-msgid "By:"
-msgstr "Door:"
+msgid ""
+"By:"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-edit.tpl:51
-#, fuzzy
-msgid "Cancel"
-msgstr "Annuleer"
+msgid ""
+"Cancel"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/page-actions/page-action-rsvp.tpl:12
-msgid "Cancel RSVP"
-msgstr "RSVP annuleren"
+msgid ""
+"Cancel RSVP"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/page-actions/page-action-connect.tpl:5
-msgid "Connect"
-msgstr "Koppel"
+msgid ""
+"Connect"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/page.publication.tpl:40
-msgid "Contract all"
-msgstr "Alles inklappen"
+msgid ""
+"Contract all"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/email/email-follow.tpl:6
-msgid "Dear"
-msgstr "Beste"
+msgid ""
+"Dear"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/remark-media/remark-media.image.tpl:37
-msgid "Delete image"
-msgstr "Verwijder afbeelding"
+msgid ""
+"Delete image"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/page-actions/page-action-connect.tpl:6
-#, fuzzy
-msgid "Disconnect"
-msgstr "Loskoppelen"
+msgid ""
+"Disconnect"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/main-aside/main-aside.media.tpl:4
-msgid "Displayed in"
-msgstr "Weergegeven in"
+msgid ""
+"Displayed in"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/_admin_edit_content.remark.tpl:32
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-edit.tpl:27
-msgid "E-mail"
-msgstr "E-mail"
+msgid ""
+"E-mail"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/_admin_edit_content.remark.tpl:38
-#, fuzzy
-msgid "E-mail visible"
-msgstr "E-mail zichtbaar"
+msgid ""
+"E-mail visible"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/page-actions/page-action-edit-thing.tpl:1
-#, fuzzy
-msgid "Edit"
-msgstr "Bewerk"
+msgid ""
+"Edit"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/page-actions/page-action-edit-thing.tpl:9
-#, fuzzy
-msgid "Edit page"
-msgstr "Bewerk pagina"
+msgid ""
+"Edit page"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/_admin_features.category.tpl:6
-msgid "Enable comments"
-msgstr "Reacties inschakelen"
+msgid ""
+"Enable comments"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/main-aside/main-aside.location.tpl:6
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/main-aside/main-aside.organization.tpl:6
-msgid "Events"
-msgstr "Evenementen"
+msgid ""
+"Events"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/page.keyword.tpl:9
-#, fuzzy
-msgid "Everything for:"
-msgstr "Alles voor: "
+msgid ""
+"Everything for:"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/page.publication.tpl:40
-msgid "Expand all"
-msgstr "Alles uitklappen"
+msgid ""
+"Expand all"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/main-aside/main-aside.person.tpl:17
-msgid "Favorites of"
-msgstr "Favorieten van"
+msgid ""
+"Favorites of"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/page.collection.tpl:39
-msgid "Inhoud"
-msgstr "Inhoud"
+msgid ""
+"Inhoud"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/page-actions/page-action-connect-user.tpl:4
-msgid "Like"
-msgstr "Like"
+msgid ""
+"Like"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/main-aside/main-aside.location.tpl:18
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/main-aside/main-aside.organization.tpl:18
-msgid "Located here"
-msgstr "Hier gevestigd"
+msgid ""
+"Located here"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/list/list-item-vertical.remark.tpl:36
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/list/list-item-vertical.tpl:35
-#, fuzzy
-msgid "Location"
-msgstr "Lokatie"
+msgid ""
+"Location"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/_admin_edit_content.remark.tpl:26
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-edit.tpl:22
-msgid "Name"
-msgstr "Naam"
+msgid ""
+"Name"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/remark-pager/remark-pager.tpl:39
-msgid "Next page"
-msgstr "Volgende pagina"
+msgid ""
+"Next page"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-number-of.tpl:1
-msgid "No remarks"
-msgstr "Geen opmerkingen"
+msgid ""
+"No remarks"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/list/list.tpl:11
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/list/list.tpl:77
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/map/map.tpl:63
-#, fuzzy
-msgid "No results"
-msgstr "Geen resultaten"
+msgid ""
+"No results"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/search-suggestions/search-suggestions.tpl:13
-#, fuzzy
-msgid "Nothing found"
-msgstr "Geen resultaten gevonden"
+msgid ""
+"Nothing found"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/part-of/part-of-aside.tpl:1
-#, fuzzy
-msgid "Part of"
-msgstr "Onderdeel van"
+msgid ""
+"Part of"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/part-of/part-of.media.tpl:4
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/part-of/part-of.tpl:4
-msgid "Part of:"
-msgstr "Onderdeel van:"
+msgid ""
+"Part of:"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/_admin_edit_content.remark.tpl:6
-#, fuzzy
-msgid "Person details"
-msgstr "Persoonlijke gegevens"
+msgid ""
+"Person details"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/remark-pager/remark-pager.tpl:12
-msgid "Previous page"
-msgstr "Vorige pagina"
+msgid ""
+"Previous page"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/page-actions/page-action-rsvp.tpl:11
-msgid "RSVP"
-msgstr "RSVP"
+msgid ""
+"RSVP"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-form.tpl:6
-msgid "Reaction"
-msgstr "Reactie"
+msgid ""
+"Reaction"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/email/email-follow.tpl:3
-#, fuzzy
-msgid "Reaction added to"
-msgstr "Reactie toegevoegd aan"
+msgid ""
+"Reaction added to"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-view.tpl:41
-#, fuzzy
-msgid "Reaction to:"
-msgstr "Reactie op:"
+msgid ""
+"Reaction to:"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-form.tpl:6
-msgid "Reactions"
-msgstr "Reacties"
+msgid ""
+"Reactions"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/foldout/foldout-button.tpl:1
-#, fuzzy
-msgid "Read more"
-msgstr "Lees meer"
+#: zotonic_mod_driebit_ginger_foundation/priv/templates/foldout/foldout-button.tpl:1
+msgid ""
+"Read more"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/main-aside/main-aside.media.tpl:14
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/main-aside/main-aside.text.tpl:4
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/main-aside/main-aside.tpl:5
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/main-aside/main-aside.tpl:14
-msgid "Related"
-msgstr "Gerelateerd"
+msgid ""
+"Related"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/main-aside/main-aside.person.tpl:32
-msgid "Remarks of"
-msgstr "Reacties van"
+msgid ""
+"Remarks of"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-edit.tpl:52
-#, fuzzy
-msgid "Save"
-msgstr "Bewaar"
+msgid ""
+"Save"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/search-suggestions/search-form.tpl:8
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/search-suggestions/search-form.tpl:9
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/search-suggestions/search-form.tpl:26
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/search-suggestions/search-form.tpl:39
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/search-suggestions/toggle-search.tpl:3
-#, fuzzy
-msgid "Search"
-msgstr "Zoek"
+msgid ""
+"Search"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/list/list.tpl:8
-#, fuzzy
-msgid "Show more results..."
-msgstr "Toon meer resultaten…"
+msgid ""
+"Show more results..."
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/captcha/captcha.tpl:37
-#, fuzzy
 msgid ""
-"Sorry, there was a problem with processing your form. Please contact us if "
-"the problem persists."
+"Sorry, there was a problem with processing your form. Please contact us "
+"if the problem persists."
 msgstr ""
-"Sorry, er is iets misgegaan met je formulier. Neem even contact met ons op "
-"als het probleem blijft."
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/list/list-item.remark.tpl:48
-#, fuzzy
-msgid "This is a remark on"
-msgstr "Dit is een opmerking over"
+msgid ""
+"This is a remark on"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-edit.tpl:40
-msgid "Title"
-msgstr "Titel"
+msgid ""
+"Title"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/page-actions/page-action-connect-user.tpl:5
-msgid "Unlike"
-msgstr "Unlike"
+msgid ""
+"Unlike"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-edit.tpl:4
-msgid "You are not allowed to add a remark."
-msgstr "Je mag geen opmerking toevoegen."
+msgid ""
+"You are not allowed to add a remark."
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-edit.tpl:2
-#, fuzzy
-msgid "You are not allowed to edit this remark."
-msgstr "Je mag deze opmerking niet bewerken."
+msgid ""
+"You are not allowed to edit this remark."
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/src/support/ginger_remark.erl:56
-#, fuzzy
-msgid "You can only remark about things you can see."
-msgstr "Je kunt alleen dingen zeggen over dingen die je ziet."
+msgid ""
+"You can only remark about things you can see."
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-edit.tpl:51
-msgid "cancel"
-msgstr "annuleren"
+msgid ""
+"cancel"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-view.tpl:72
-#, fuzzy
-msgid "delete"
-msgstr "verwijder"
+#: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-view.tpl:72
+msgid ""
+"delete"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-view.tpl:70
-msgid "edit"
-msgstr "bewerk"
+#: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-view.tpl:70
+msgid ""
+"edit"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/page-actions/page-action-interested.tpl:3
-msgid "interested people"
-msgstr "geïnteresseerden"
+msgid ""
+"interested people"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/page-actions/page-action-connect-user.tpl:54
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/page-actions/page-action-connect.tpl:82
-msgid "logon or register"
-msgstr "Login of registreer"
+msgid ""
+"logon or register"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/page-actions/page-action-interested.tpl:3
-msgid "no interested people"
-msgstr "geen geïnteresseerden"
+msgid ""
+"no interested people"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-number-of.tpl:1
-msgid "remarks"
-msgstr "opmerkingen"
+msgid ""
+"remarks"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/pager/count.tpl:4
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/pager/pager.tpl:4
-msgid "results"
-msgstr "resultaten"
+msgid ""
+"results"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/map/map-infobox.tpl:1
-msgid "results(s)"
-msgstr "resultaten"
+msgid ""
+"results(s)"
+msgstr ""
+""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-edit.tpl:31
-#, fuzzy
-msgid "visible for public"
-msgstr "zichtbaar voor iedereen"
-
-#~ msgid "Hello from Zotonic"
-#~ msgstr "Hallo van Ginger"
-
-#~ msgid "Alles voor ‘"
-#~ msgstr "Everything before ‘"
+msgid ""
+"visible for public"
+msgstr ""
+""
