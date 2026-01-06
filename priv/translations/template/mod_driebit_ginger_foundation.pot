@@ -206,6 +206,12 @@ msgid ""
 msgstr ""
 ""
 
+#: zotonic_mod_driebit_ginger_foundation/priv/templates/follow/follow-page.tpl:2
+msgid ""
+"Follow this page"
+msgstr ""
+""
+
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/page.collection.tpl:39
 msgid ""
 "Inhoud"
@@ -380,6 +386,12 @@ msgstr ""
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-edit.tpl:40
 msgid ""
 "Title"
+msgstr ""
+""
+
+#: zotonic_mod_driebit_ginger_foundation/priv/templates/follow/follow-page.tpl:2
+msgid ""
+"Unfollow"
 msgstr ""
 ""
 

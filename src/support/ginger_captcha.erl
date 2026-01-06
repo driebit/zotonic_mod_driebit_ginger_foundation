@@ -5,13 +5,21 @@
 -include_lib("zotonic_core/include/zotonic.hrl").
 
 %% @doc Validate the captcha if the recaptcha key in the submit args is the
-%% same as the configured captch key.
+%% same as the configured captch key. If there is no captcha key configured then
+%% this returns true.
 -spec is_valid_captcha(proplists:proplist(), z_context:context()) -> boolean().
 is_valid_captcha(Args, Context) ->
     CaptchaKey = m_config:get_value(site, recaptcha_key, Context),
     CaptchaSecretKey = m_config:get_value(site, recaptcha_secret_key, Context),
     CaptchaKeyArg = proplists:get_value(recaptcha_key, Args),
     if
+        CaptchaKey =:= undefined; CaptchaKey =:= <<>>; CaptchaKey =:= "" ->
+            ?LOG_INFO(#{
+                in => zotonic_driebit_ginger_foundation,
+                text => <<"Validated captcha because the config site.recaptcha_key is empty">>,
+                result => ok
+            }),
+            true;
         CaptchaKey =:= CaptchaKeyArg ->
             Token = case z_context:get_q(<<"recaptcha-token">>, Context) of
                 undefined -> z_context:get_q(<<"g-recaptcha-response">>, Context);
