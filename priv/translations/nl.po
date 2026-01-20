@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2025-12-18 11:07+0100\n"
+"PO-Revision-Date: 2026-01-20 17:16+0100\n"
 "Last-Translator: Marc Worrell <marc@worrell.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -25,8 +25,9 @@ msgstr "1 geïnteresseerde"
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-number-of.tpl:1
 #, fuzzy
-msgid "1 remark"
-msgstr "1 opmerking"
+#| msgid "Reaction"
+msgid "1 reaction"
+msgstr "Reactie"
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/email/email-follow.tpl:10
 #, fuzzy
@@ -39,8 +40,8 @@ msgid "A new comment is posted on a story you authored"
 msgstr ""
 "Er is een nieuwe reactie geplaatst op een verhaal dat jij hebt geschreven."
 
-#: zotonic_mod_driebit_ginger_foundation/priv/templates/pager/count.tpl:3
-#: zotonic_mod_driebit_ginger_foundation/priv/templates/pager/pager.tpl:3
+#: zotonic_mod_driebit_ginger_foundation/priv/templates/pager/count.tpl:4
+#: zotonic_mod_driebit_ginger_foundation/priv/templates/pager/pager.tpl:4
 msgid "About {n} results"
 msgstr "Ongeveer {n} resultaten"
 
@@ -49,21 +50,15 @@ msgid "About:"
 msgstr "Over: "
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/page.media.tpl:35
-#, fuzzy
-#| msgid "Actors: "
 msgid "Actors:"
-msgstr "Actoren: "
+msgstr "Personen:"
 
+#: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-form.tpl:9
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-list.tpl:14
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-list.tpl:43
 #, fuzzy
 msgid "Add your reaction"
-msgstr "Deel je reactie"
-
-#: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-form.tpl:9
-#, fuzzy
-msgid "Add your remark"
-msgstr "Voeg je opmerking toe"
+msgstr "Voeg je reactie toe"
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/main-aside/main-aside.person.tpl:5
 msgid "Authored by"
@@ -141,9 +136,8 @@ msgid "Events"
 msgstr "Evenementen"
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/page.keyword.tpl:9
-#, fuzzy
 msgid "Everything for:"
-msgstr "Alles voor: "
+msgstr "Alles voor:"
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/page.publication.tpl:40
 msgid "Expand all"
@@ -152,6 +146,11 @@ msgstr "Alles uitklappen"
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/main-aside/main-aside.person.tpl:17
 msgid "Favorites of"
 msgstr "Favorieten van"
+
+#: zotonic_mod_driebit_ginger_foundation/priv/templates/follow/follow-page.tpl:2
+#, fuzzy
+msgid "Follow this page"
+msgstr "Volg deze pagina"
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/page.collection.tpl:39
 msgid "Inhoud"
@@ -182,8 +181,10 @@ msgid "Next page"
 msgstr "Volgende pagina"
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-number-of.tpl:1
-msgid "No remarks"
-msgstr "Geen opmerkingen"
+#, fuzzy
+#| msgid "Reactions"
+msgid "No reactions"
+msgstr "Reacties"
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/list/list.tpl:11
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/list/list.tpl:77
@@ -291,18 +292,21 @@ msgstr "Dit is een opmerking over"
 msgid "Title"
 msgstr "Titel"
 
+#: zotonic_mod_driebit_ginger_foundation/priv/templates/follow/follow-page.tpl:2
+msgid "Unfollow"
+msgstr "Niet meer volgen"
+
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/page-actions/page-action-connect-user.tpl:5
 msgid "Unlike"
 msgstr "Unlike"
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-edit.tpl:4
-msgid "You are not allowed to add a remark."
-msgstr "Je mag geen opmerking toevoegen."
+msgid "You are not allowed to add a reaction."
+msgstr "Je mag geen reactie toevoegen."
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-edit.tpl:2
-#, fuzzy
-msgid "You are not allowed to edit this remark."
-msgstr "Je mag deze opmerking niet bewerken."
+msgid "You are not allowed to edit this reaction."
+msgstr "Je mag deze reactie niet bewerken."
 
 #: zotonic_mod_driebit_ginger_foundation/src/support/ginger_remark.erl:56
 #, fuzzy
@@ -336,11 +340,11 @@ msgid "no interested people"
 msgstr "geen geïnteresseerden"
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-number-of.tpl:1
-msgid "remarks"
-msgstr "opmerkingen"
+msgid "reactions"
+msgstr "reacties"
 
-#: zotonic_mod_driebit_ginger_foundation/priv/templates/pager/count.tpl:4
-#: zotonic_mod_driebit_ginger_foundation/priv/templates/pager/pager.tpl:4
+#: zotonic_mod_driebit_ginger_foundation/priv/templates/pager/count.tpl:6
+#: zotonic_mod_driebit_ginger_foundation/priv/templates/pager/pager.tpl:6
 msgid "results"
 msgstr "resultaten"
 
@@ -352,6 +356,20 @@ msgstr "resultaten"
 #, fuzzy
 msgid "visible for public"
 msgstr "zichtbaar voor iedereen"
+
+#, fuzzy
+#~ msgid "1 remark"
+#~ msgstr "1 opmerking"
+
+#, fuzzy
+#~ msgid "Add your remark"
+#~ msgstr "Voeg je opmerking toe"
+
+#~ msgid "No remarks"
+#~ msgstr "Geen opmerkingen"
+
+#~ msgid "remarks"
+#~ msgstr "opmerkingen"
 
 #~ msgid "Hello from Zotonic"
 #~ msgstr "Hallo van Ginger"

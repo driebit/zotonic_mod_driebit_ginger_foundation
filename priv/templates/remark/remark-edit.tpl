@@ -1,7 +1,7 @@
 {% if remark_id and not remark_id.is_editable %}
-    <p>{_ You are not allowed to edit this remark. _}</p>
+    <p>{_ You are not allowed to edit this reaction. _}</p>
 {% elseif not remark_id and not m.acl.is_allowed.insert.remark %}
-    <p>{_ You are not allowed to add a remark. _}</p>
+    <p>{_ You are not allowed to add a reaction. _}</p>
 {% else %}
     <div class="remark" id="remark_form">
         {% wire id="rscform" type="submit"

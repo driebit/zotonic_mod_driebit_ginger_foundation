@@ -33,7 +33,7 @@ msgstr ""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-number-of.tpl:1
 msgid ""
-"1 remark"
+"1 reaction"
 msgstr ""
 ""
 
@@ -49,8 +49,8 @@ msgid ""
 msgstr ""
 ""
 
-#: zotonic_mod_driebit_ginger_foundation/priv/templates/pager/count.tpl:3
-#: zotonic_mod_driebit_ginger_foundation/priv/templates/pager/pager.tpl:3
+#: zotonic_mod_driebit_ginger_foundation/priv/templates/pager/count.tpl:4
+#: zotonic_mod_driebit_ginger_foundation/priv/templates/pager/pager.tpl:4
 msgid ""
 "About {n} results"
 msgstr ""
@@ -68,19 +68,14 @@ msgid ""
 msgstr ""
 ""
 
+#: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-form.tpl:9
+#: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-form.tpl:9
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-list.tpl:14
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-list.tpl:14
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-list.tpl:43
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-list.tpl:43
 msgid ""
 "Add your reaction"
-msgstr ""
-""
-
-#: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-form.tpl:9
-#: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-form.tpl:9
-msgid ""
-"Add your remark"
 msgstr ""
 ""
 
@@ -253,7 +248,7 @@ msgstr ""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-number-of.tpl:1
 msgid ""
-"No remarks"
+"No reactions"
 msgstr ""
 ""
 
@@ -403,13 +398,13 @@ msgstr ""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-edit.tpl:4
 msgid ""
-"You are not allowed to add a remark."
+"You are not allowed to add a reaction."
 msgstr ""
 ""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-edit.tpl:2
 msgid ""
-"You are not allowed to edit this remark."
+"You are not allowed to edit this reaction."
 msgstr ""
 ""
 
@@ -460,12 +455,12 @@ msgstr ""
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-number-of.tpl:1
 msgid ""
-"remarks"
+"reactions"
 msgstr ""
 ""
 
-#: zotonic_mod_driebit_ginger_foundation/priv/templates/pager/count.tpl:4
-#: zotonic_mod_driebit_ginger_foundation/priv/templates/pager/pager.tpl:4
+#: zotonic_mod_driebit_ginger_foundation/priv/templates/pager/count.tpl:6
+#: zotonic_mod_driebit_ginger_foundation/priv/templates/pager/pager.tpl:6
 msgid ""
 "results"
 msgstr ""
