@@ -71,9 +71,12 @@ as
                     %}
                 {% endif %}
             {% endif %}
-        {% else %}
-            {% if can_connect %}
-                {# The user is not logged in. Show a dialog for login and connect. #}
+        {% elseif can_connect %}
+            {# The user is not logged in. Redirect to the logon page to authenticate. #}
+            <a href="{% url logon p=m.req.raw_path reason='action' %}" class="{{ btn_class }}" title=_"logon or register">{{ btn_connect_text }}</a>
+
+            {# The user is not logged in. Show a dialog for login and connect. #}
+            {#
                 {% button
                     text=btn_connect_text
                     class=btn_class
@@ -86,7 +89,7 @@ as
                         id=id
                     }
                 %}
-            {% endif %}
+            #}
         {% endif %}
     </div>
 {% endwith %}
