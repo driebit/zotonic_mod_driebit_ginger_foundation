@@ -9,12 +9,9 @@ as
                 {% include "remark/remark-number-of.tpl" %}
             </h2>
         {% endblock %}
-        {% if not show_form and order == "desc" %}
-            {% if m.acl.is_allowed.insert.remark %}
-                <a href="#" id="new-remark-link" class="remark-new" title="{_ Add your reaction _}">{_ Add your reaction _}</a>
-            {% endif %}
+        {% if not show_form and order == "desc" and m.driebit_ginger_foundation.is_comments_enabled[id]%}
+            <a href="#" id="new-remark-link" class="remark-new" title="{_ Add your reaction _}">{_ Add your reaction _}</a>
         {% endif %}
-
     </div>
 
     {% include "remark-pager/remark-pager.tpl" %}
@@ -39,7 +36,7 @@ as
        {% endwith %}
    </div>
 
-    {% if not show_form and order == "asc" %}
+    {% if not show_form and order == "asc" and m.driebit_ginger_foundation.is_comments_enabled[id] %}
         <a href="#" id="new-remark-link" class="remark-new" title="{_ Add your reaction _}">{_ Add your reaction _}</a>
     {% endif %}
 

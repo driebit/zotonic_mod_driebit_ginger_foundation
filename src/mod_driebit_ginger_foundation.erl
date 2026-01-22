@@ -20,13 +20,22 @@
         default => <<>>,
         title => "Secret site key voor Google reCAPTCHA",
         description => "Secret site key voor Google reCAPTCHA validaties"
+    },
+    #{
+        module => site,
+        key => anonymous_comments_enabled,
+        type => boolean,
+        default => false,
+        title => "Allow anonymous users to post comments",
+        description => "If set then anonymous users are allowed to add remarks"
     }
 ]).
 
 -export([
     event/2,
     observe_rsc_get/3,
-    observe_rsc_update/3
+    observe_rsc_update/3,
+    observe_acl_is_allowed_prop/2
 ]).
 
 -include_lib("zotonic_core/include/zotonic.hrl").
@@ -67,6 +76,14 @@ observe_rsc_get(#rsc_get{}, #{ <<"feature_enable_comments">> := V } = Raw, _Cont
     maps:remove(<<"feature_enable_comments">>, Raw1);
 observe_rsc_get(#rsc_get{}, Raw, _Context) ->
     Raw.
+
+%% @doc Restrict the viewing of the anonymous_email property on remarks, only visible if the 'anonymous_email_visible'
+%% flag is set or the resource is editable.
+observe_acl_is_allowed_prop(#acl_is_allowed_prop{ object = Id, action = view, prop = <<"anonymous_email">> }, Context) when is_integer(Id) ->
+    z_acl:rsc_editable(Id, Context)
+    orelse z_convert:to_bool(m_rsc:p_no_acl(Id, <<"anonymous_email_visible">>, Context));
+observe_acl_is_allowed_prop(#acl_is_allowed_prop{}, _Context) ->
+    undefined.
 
 
 %% @doc Default inserted resources to the content group in the postback data.

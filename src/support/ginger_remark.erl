@@ -17,11 +17,11 @@ event(#submit{ message = {remark_save, Args} }, Context) ->
             {body_element, BodyElement} = proplists:lookup(body_element, Args),
             {about_id, AboutId0} = proplists:lookup(about_id, Args),
             {remark_id, RemarkId0} = proplists:lookup(remark_id, Args),
-            AboutId = z_convert:to_integer(AboutId0),
-            RemarkId = z_convert:to_integer(RemarkId0),
+            AboutId = m_rsc:rid(AboutId0, Context),
+            RemarkId = m_rsc:rid(RemarkId0, Context),
             case is_body_ok(Context) of
                 true ->
-                    case z_acl:rsc_visible(AboutId, Context) of
+                    case is_allowed_remark_save(RemarkId, AboutId, Context) of
                         true ->
                             case remark_save(RemarkId, AboutId, z_acl:user(Context), Context) of
                                 {ok, NewRemarkId} ->
@@ -50,10 +50,11 @@ event(#submit{ message = {remark_save, Args} }, Context) ->
                                         remark_id => RemarkId,
                                         about_id => AboutId,
                                         user_id => z_acl:user(Context)
-                                    })
+                                    }),
+                                    z_render:growl_error(?__("Could not save the reaction.", Context), Context)
                             end;
                         false ->
-                            z_render:growl_error(?__("You can only remark about things you can see.", Context), Context)
+                            z_render:growl_error(?__("You can only react on things you can see.", Context), Context)
                     end;
                 false ->
                     % Mark the body field as error
@@ -62,6 +63,13 @@ event(#submit{ message = {remark_save, Args} }, Context) ->
         false ->
             z_render:wire({fade_in, [ {target, <<"captcha-failed">>} ]}, Context)
     end.
+
+is_allowed_remark_save(undefined, undefined, _Context) ->
+    false;
+is_allowed_remark_save(undefined, AboutId, Context) ->
+    m_driebit_ginger_foundation:is_comments_enabled(AboutId, Context);
+is_allowed_remark_save(RemarkId, _AboutId, Context) ->
+    z_acl:rsc_editable(RemarkId, Context).
 
 
 %% @doc Notify all followers of an article that a new remark has been added.
@@ -113,7 +121,8 @@ is_body_ok(Context) ->
             false
     end.
 
-%% @doc Create a new remark or update an existing remark.
+%% @doc Create a new remark or update an existing remark. For new reactions, there has
+%% already been a check if the reaction could be inserted.
 remark_save(undefined, AboutId, undefined, Context) when is_integer(AboutId) ->
     % New remark from an anonymous user.
     Name = z_context:get_q_validated(<<"anonymous_name">>, Context),
@@ -133,7 +142,7 @@ remark_save(undefined, AboutId, undefined, Context) when is_integer(AboutId) ->
         <<"title">> => Title,
         <<"body">> => Body
     },
-    case m_rsc:insert(Props, Context) of
+    case m_rsc:insert(Props, [{is_acl_check, false}], Context) of
         {ok, RemarkId} ->
             case m_edge:insert(RemarkId, about, AboutId, z_acl:sudo(Context)) of
                 {ok, _} ->
@@ -159,7 +168,7 @@ remark_save(undefined, AboutId, UserId, Context) when is_integer(AboutId) ->
         <<"title">> => Title,
         <<"body">> => Body
     },
-    case m_rsc:insert(Props, Context) of
+    case m_rsc:insert(Props, [{is_acl_check, false}], Context) of
         {ok, RemarkId} ->
             case m_edge:insert(RemarkId, about, AboutId, Context) of
                 {ok, _} ->
