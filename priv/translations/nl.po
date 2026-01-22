@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2026-01-20 17:16+0100\n"
+"PO-Revision-Date: 2026-01-22 12:18+0100\n"
 "Last-Translator: Marc Worrell <marc@worrell.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -54,8 +54,8 @@ msgid "Actors:"
 msgstr "Personen:"
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-form.tpl:9
-#: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-list.tpl:14
-#: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-list.tpl:43
+#: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-list.tpl:13
+#: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-list.tpl:40
 #, fuzzy
 msgid "Add your reaction"
 msgstr "Voeg je reactie toe"
@@ -89,6 +89,10 @@ msgstr "Koppel"
 msgid "Contract all"
 msgstr "Alles inklappen"
 
+#: zotonic_mod_driebit_ginger_foundation/src/support/ginger_remark.erl:54
+msgid "Could not save the reaction."
+msgstr "De reactie kon niet worden opgeslagen."
+
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/email/email-follow.tpl:6
 msgid "Dear"
 msgstr "Beste"
@@ -106,12 +110,12 @@ msgstr "Loskoppelen"
 msgid "Displayed in"
 msgstr "Weergegeven in"
 
-#: zotonic_mod_driebit_ginger_foundation/priv/templates/_admin_edit_content.remark.tpl:32
+#: zotonic_mod_driebit_ginger_foundation/priv/templates/_admin_edit_content.remark.tpl:23
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-edit.tpl:27
 msgid "E-mail"
 msgstr "E-mail"
 
-#: zotonic_mod_driebit_ginger_foundation/priv/templates/_admin_edit_content.remark.tpl:38
+#: zotonic_mod_driebit_ginger_foundation/priv/templates/_admin_edit_content.remark.tpl:29
 #, fuzzy
 msgid "E-mail visible"
 msgstr "E-mail zichtbaar"
@@ -171,7 +175,7 @@ msgstr "Hier gevestigd"
 msgid "Location"
 msgstr "Lokatie"
 
-#: zotonic_mod_driebit_ginger_foundation/priv/templates/_admin_edit_content.remark.tpl:26
+#: zotonic_mod_driebit_ginger_foundation/priv/templates/_admin_edit_content.remark.tpl:17
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-edit.tpl:22
 msgid "Name"
 msgstr "Naam"
@@ -233,7 +237,7 @@ msgstr "Reactie toegevoegd aan"
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-view.tpl:41
 #, fuzzy
 msgid "Reaction to:"
-msgstr "Reactie op:"
+msgstr "Wacht op een reactie van de beheerder"
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-form.tpl:6
 msgid "Reactions"
@@ -284,9 +288,8 @@ msgstr ""
 "als het probleem blijft."
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/list/list-item.remark.tpl:48
-#, fuzzy
-msgid "This is a remark on"
-msgstr "Dit is een opmerking over"
+msgid "This is a reaction on"
+msgstr "Dit is een reactie op"
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-edit.tpl:40
 msgid "Title"
@@ -308,10 +311,9 @@ msgstr "Je mag geen reactie toevoegen."
 msgid "You are not allowed to edit this reaction."
 msgstr "Je mag deze reactie niet bewerken."
 
-#: zotonic_mod_driebit_ginger_foundation/src/support/ginger_remark.erl:56
-#, fuzzy
-msgid "You can only remark about things you can see."
-msgstr "Je kunt alleen dingen zeggen over dingen die je ziet."
+#: zotonic_mod_driebit_ginger_foundation/src/support/ginger_remark.erl:57
+msgid "You can only react on things you can see."
+msgstr "Je kunt alleen reageren op dingen die je kunt zien."
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/remark/remark-edit.tpl:51
 msgid "cancel"
@@ -329,11 +331,6 @@ msgstr "bewerk"
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/page-actions/page-action-interested.tpl:3
 msgid "interested people"
 msgstr "geïnteresseerden"
-
-#: zotonic_mod_driebit_ginger_foundation/priv/templates/page-actions/page-action-connect-user.tpl:54
-#: zotonic_mod_driebit_ginger_foundation/priv/templates/page-actions/page-action-connect.tpl:82
-msgid "logon or register"
-msgstr "Login of registreer"
 
 #: zotonic_mod_driebit_ginger_foundation/priv/templates/page-actions/page-action-interested.tpl:3
 msgid "no interested people"
@@ -356,6 +353,9 @@ msgstr "resultaten"
 #, fuzzy
 msgid "visible for public"
 msgstr "zichtbaar voor iedereen"
+
+#~ msgid "logon or register"
+#~ msgstr "Login of registreer"
 
 #, fuzzy
 #~ msgid "1 remark"
