@@ -13,11 +13,11 @@
     <aside class="main-aside">
         {% with type|default:"subject" as type %}
             {% if direction == 'subject' %}
-                {% with m.search.paged[{ginger_search hassubject=[id, type] pagelen=6 page=q.page}] as result %}
+                {% with m.search.paged[{query hassubject=[id, type] pagelen=6 page=q.page}] as result %}
                     {% include "list/list.tpl" list_id="list--query" items=result extraClasses="" id=id %}
                 {% endwith %}
             {% else %}
-                {% with m.search.paged[{ginger_search hasobject=[id, type] cat_exclude=['media'] pagelen=6 page=q.page}] as result %}
+                {% with m.search.paged[{query hasobject=[id, type] cat_exclude=['media'] pagelen=6 page=q.page}] as result %}
                     {% include "list/list.tpl" list_id="list--query" items=result extraClasses="" id=id %}
                 {% endwith %}
             {% endif %}
