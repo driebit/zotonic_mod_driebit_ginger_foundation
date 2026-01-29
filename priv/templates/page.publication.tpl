@@ -29,7 +29,7 @@
 
         {% if id.o.haspart %}
             <aside class="main-aside">
-                {% with m.search[{ginger_search hassubject=[id,'haspart'] sort="seq" pagelen=100}] as result %}
+                {% with m.search[{query hassubject=[id,'haspart'] sort="seq" pagelen=100}] as result %}
 
                     {% include "list/list.tpl" list_id="list--publication" hide_showall_button items=result extraClasses="" class="list--publication" list_template="list/list-item-publication.tpl" id=id %}
                 {% endwith %}

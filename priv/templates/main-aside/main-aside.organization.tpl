@@ -1,7 +1,7 @@
 
 {% if id.s.presented_at %}
     <aside class="main-aside">
-        {% with m.search[{ginger_search hasobject=[id,'presented_at'] pagelen=6}] as result %}
+        {% with m.search[{query hasobject=[id,'presented_at'] pagelen=6}] as result %}
 
             {% include "list/list-header.tpl" id=id list_title=_"Events" items=result %}
 
@@ -13,7 +13,7 @@
 
 {% if id.s.located_in %}
     <aside class="main-aside">
-        {% with m.search[{ginger_search hasobject=[id,'located_in'] pagelen=6}] as result %}
+        {% with m.search[{query hasobject=[id,'located_in'] pagelen=6}] as result %}
 
             {% include "list/list-header.tpl" id=id list_title=_"Located here" items=result %}
 

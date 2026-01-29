@@ -24,7 +24,7 @@
         </div>
 
         <aside class="main-aside">
-            {% with m.search[{ginger_search cat=id.name pagelen=6 page=q.page}] as result %}
+            {% with m.search[{query cat=id.name pagelen=6 page=q.page}] as result %}
                 {% include "list/list.tpl" list_id="list--query" hide_showall_button items=result extraClasses="" id=id %}
             {% endwith %}
         </aside>

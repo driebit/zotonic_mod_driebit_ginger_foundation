@@ -1,5 +1,5 @@
 {% if id.o.fixed_context %}
-    {% with m.search[{ginger_search hassubject=[id,'fixed_context'] pagelen=6}] as result %}
+    {% with m.search[{query hassubject=[id,'fixed_context'] pagelen=6}] as result %}
 
         {% include "list/list-header.tpl" id=id list_title=_"Related" items=result %}
 
@@ -7,7 +7,7 @@
 
     {% endwith %}
 {% elif id.o.subject %}
-    {% with m.search[{query match_objects=id is_published custompivot="ginger_search" filter=["is_unfindable", "false"] cat_exclude=['media', 'person'] pagelen=6}] as result %}
+    {% with m.search[{query match_objects=id is_published is_findable cat_exclude=['media', 'person'] pagelen=6}] as result %}
 
         {% include "keywords/keywords-aside.tpl" id=id items=result %}
 
