@@ -7,6 +7,6 @@
         {% endif %}
     </div>
     <div class="do_search_cmp_pager search__pager__pagination">
-        {% pager result=items dispatch="search" qargs %}
+        {% pager result=items dispatch="search" qargs hash=pager_hash %}
     </div>
 </div>
