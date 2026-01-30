@@ -29,7 +29,7 @@ as
     {% if items %}
 
         {% if show_pager %}
-            {% include "pager/pager.tpl" %}
+            {% include "pager/pager.tpl" hash="#"++list_id %}
         {% elseif show_count %}
             {% include "pager/count.tpl" %}
         {% endif %}
@@ -39,7 +39,7 @@ as
         </ul>
 
         {% if show_pager %}
-            {% include "pager/pager.tpl" %}
+            {% include "pager/pager.tpl" hash="#"++list_id %}
         {% endif %}
 
         {% if result.next %}
