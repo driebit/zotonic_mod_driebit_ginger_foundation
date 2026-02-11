@@ -5,7 +5,7 @@ as
 %}
 
 <div class="{{ class }}">
-    <i class="icon--{{ id.category.name }}"></i>{{ m.rsc[id.category.id].title }}
+    <i class="icon--{{ id.category_id.name }}"></i>{{ id.category_id.id.title }}
 </div>
 
 {% endwith %}
