@@ -4,14 +4,14 @@
 
     {% if id.medium.oembed.provider_name|lower == "youtube" %}
 
-        <a href="http://www.youtube.com/watch?v={{ id.medium.video_embed_id }}" class="lightbox lightbox-video-embed fancybox.iframe" rel="body" {% if id.summary %}title="{{ id.summary }}"{% endif %}>
+        <a href="https://www.youtube.com/watch?v={{ id.medium.video_embed_id }}" class="lightbox lightbox-video-embed fancybox.iframe" rel="body" {% if id.summary %}title="{{ id.summary }}"{% endif %}>
             {% image id mediaclass="media-thumb" title=id.title alt=id.title %}
             <i class="fa fa-play-circle"></i>
         </a>
 
     {% elif id.medium.video_embed_service|lower == "youtube" %}
 
-        <a href="http://www.youtube.com/watch?v={{ id.medium.video_embed_id }}" class="lightbox lightbox-video-embed fancybox.iframe" rel="body" {% if id.summary %}title="{{ id.summary }}"{% endif %}>
+        <a href="https://www.youtube.com/watch?v={{ id.medium.video_embed_id }}" class="lightbox lightbox-video-embed fancybox.iframe" rel="body" {% if id.summary %}title="{{ id.summary }}"{% endif %}>
             {% image id mediaclass="media-thumb" title=id.title alt=id.title %}
             <i class="fa fa-play-circle"></i>
         </a>
@@ -24,7 +24,7 @@
         </a>
 
     {% elif id.medium.video_embed_service|lower == "vimeo" %}
-        <a href="http://vimeo.com/{{ id.medium.video_embed_id }}" class="lightbox lightbox-video-embed fancybox.iframe" rel="body" {% if id.summary %}title="{{ id.summary }}"{% endif %}>
+        <a href="https://vimeo.com/{{ id.medium.video_embed_id }}" class="lightbox lightbox-video-embed fancybox.iframe" rel="body" {% if id.summary %}title="{{ id.summary }}"{% endif %}>
             {% image id mediaclass="media-thumb" title=id.title alt=id.title %}
             <i class="fa fa-play-circle"></i>
         </a>
@@ -33,7 +33,7 @@
 
 {% else %}
 
-    <a href="#" data-video-url="/media/attachment/{{ id.medium.filename }}" data-video-width="{{ id.medium.width }}" data-video-height="{{ id.medium.height }}" class="lightbox lightbox-video-embed default-video-player" rel="body" {% if id.summary %}title="{{ id.summary }}"{% endif %}>
+    <a href="#" data-video-url="{% url media_attachment id=id %}" data-video-width="{{ id.medium.width }}" data-video-height="{{ id.medium.height }}" class="lightbox lightbox-video-embed default-video-player" rel="body" {% if id.summary %}title="{{ id.summary }}"{% endif %}>
         {% image id mediaclass="media-thumb" title=id.title alt=id.title %}
     </a>
 {% endif %}
