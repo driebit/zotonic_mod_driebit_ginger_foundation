@@ -22,7 +22,7 @@
 
                 <p>{{ remark.body|striptags|truncate:100:"..." }}</p>
 
-                <p style="margin-top: 20px;"><a href="{{ about.page_url }}" style="padding: 10px 15px; border-radius: 3px; font-weight: bold; background: #000; color: #fff;">Bekijk reactie</a></p>
+                <p style="margin-top: 20px;"><a href="{{ about.page_url_abs }}" style="padding: 10px 15px; border-radius: 3px; font-weight: bold; background: #000; color: #fff;">Bekijk reactie</a></p>
             </td>
             <td width="10"></td>
         </tr>
